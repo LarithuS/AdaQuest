@@ -8,13 +8,16 @@
   </head>
   <body>
     <div class="block">
-        <h3>AdaQuest</h3>
+        <div>
+          <a href="land.html"><h3>AdaQuest</h3></a>
         <p>Log into your account</p>
+        </div>
         <form>
-          <input placeholder="Email address" type="email">
+          <input id="email" placeholder="Email address" type="email">
           <input placeholder="Password" type="password">
-          <label><input type="submit">Login</label>
-        </form>    
+          <input  id="login" value="Log In" type="submit" onclick="login()">
+        </form>
+        <p>or <a href="signup.html" id="signup">Sign Up</a></p>   
     </div>
   </body>
 </html>
