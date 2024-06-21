@@ -10,22 +10,22 @@ document.addEventListener('DOMContentLoaded', function() {
   function changeDarkWave() {
     darkWaves.forEach(wave => wave.style.opacity = 0); // Hide all dark waves
     darkWaves[darkIndex].style.opacity = 1; // Show current dark wave
-    darkIndex = (darkIndex + 1) % darkWaves.length; // Move to the next dark wave
+    darkIndex = (darkIndex + (Math.floor(Math.random() * 5))) % darkWaves.length; //Index increased randomly
   }
   
   function changeMiddleWave() {
-    middleWaves.forEach(wave => wave.style.opacity = 0); // Hide all middle waves
-    middleWaves[middleIndex].style.opacity = 1; // Show current middle wave
-    middleIndex = (middleIndex + 1) % middleWaves.length; // Move to the next middle wave
+    middleWaves.forEach(wave => wave.style.opacity = 0);
+    middleWaves[middleIndex].style.opacity = 1;
+    middleIndex = (middleIndex + ((Math.floor(Math.random() * 5)))) % middleWaves.length;
   }
   
   function changeTopWave() {
-    topWaves.forEach(wave => wave.style.opacity = 0); // Hide all top waves
-    topWaves[topIndex].style.opacity = 1; // Show current top wave
-    topIndex = (topIndex + 1) % topWaves.length; // Move to the next top wave
+    topWaves.forEach(wave => wave.style.opacity = 0);
+    topWaves[topIndex].style.opacity = 1;
+    topIndex = (topIndex + ((Math.floor(Math.random() * 5)))) % topWaves.length; 
   }
   
-  setInterval(changeDarkWave, 6000); // Change dark wave every 5 seconds (adjust as needed)
-  setInterval(changeMiddleWave, 6000); // Change middle wave every 6 seconds (adjust as needed)
-  setInterval(changeTopWave, 6000); // Change top wave every 7 seconds (adjust as needed)
+  setInterval(changeDarkWave, 6000);
+  setInterval(changeMiddleWave, 6000);
+  setInterval(changeTopWave, 6000); 
 });
