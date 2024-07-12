@@ -12,15 +12,17 @@
           <a href="land.html"><h3>AdaQuest</h3></a>
         <p>Create an Account</p>
         </div>
-        <form>
+        <form id="signupform">
           <input id="email" placeholder="Email address" type="email">
-          <input id="email" placeholder="Rewrite Email address" type="email">
-          <input placeholder="Username (not your real name)" type="text">
-          <input placeholder="Password" type="password">
-          <input placeholder="Rewrite Password" type="password">
-          <input  id="login" value="Sign Up" type="submit" onclick="signup()">
+          <input id="r-email" placeholder="Rewrite Email address" type="email">
+          <input id="user" placeholder="Username (not your real name)" type="text">
+          <input id="password" placeholder="Password" type="password">
+          <input id="r-password" placeholder="Rewrite Password" type="password">
+          <p id="Error" style="color: red;"></p>
+          <button id="signup" type="submit">Sign Up</button>
         </form>
-        <p>or <a href="login.html" id="signup">Log In</a></p>   
+        <p>or <a href="login.html" id="signup-a">Log In</a></p>   
     </div>
+    <script src="../js/signup.js"></script>
   </body>
 </html>
